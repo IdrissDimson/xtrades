@@ -373,10 +373,6 @@ input[type=search] {
   display: block;
 }
 
-.popup-trigger {
-  display: inline-block;
-}
-
 .popup-modal {
   max-height: 750px;
   width: 75%;

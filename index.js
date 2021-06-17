@@ -241,6 +241,7 @@ buttonCollapse.addEventListener("click", function () {
         <li><a class="nav-buttons" href="#"><img src="assets/trophy.svg" alt="icon"></a></li>
         <li><a class="nav-buttons" href="#"><img src="assets/hat-3 1.svg" alt="icon"></a></li>
     `;
+    navList[0].style.textAlign = "center";
     middleButton[0].style.display = 'none';
     buttonCollapse.innerHTML = `<img class="flipped" src="assets/Collapse.svg" alt="icon">`
     open = false;
@@ -255,6 +256,7 @@ buttonCollapse.addEventListener("click", function () {
       <li><a class="nav-buttons" href="#"><img src="assets/trophy.svg" alt="icon"> Leaderboard</a></li>
       <li><a class="nav-buttons" href="#"><img src="assets/hat-3 1.svg" alt="icon"> Xhub</a></li>
     `;
+    navList[0].style.textAlign = "left";
     middleButton[0].style.display = 'flex';
     buttonCollapse.innerHTML = `<img src="assets/Collapse.svg" alt="icon"> Collapse`
   }

@@ -115,9 +115,10 @@ button:hover{
 .nav-links li {
   height: 46px;
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding-left: 10px;
+  transition: 0.5s;
 }
 .nav-links li:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -130,16 +131,21 @@ button:hover{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
+.nav-buttons img, .collapse-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
 .nav-buttons:hover{
   color: #fff;
 }
 .collapse-button {
+  font-size: 1em;
+  font-weight: 500;
   line-height: 46px;
   background: 0;
   color: rgba(255, 255, 255, 0.6);
-}
-.collapse-button img {
-  padding-top: 10px;
 }
 .collapse-button:hover {
   color: #fff;
@@ -157,6 +163,7 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  transition: 0.5s;
 }
 .alerts-section nav {
   padding-left: 25px;

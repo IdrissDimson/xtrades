@@ -87,6 +87,39 @@ button:hover{
   align-items: center;
   min-height: 100%;
 }
+.search-button {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: transparent;
+  vertical-align: center;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+
+  background-color: #F5F8FB;
+  border-radius: 8px;
+  padding: 0 15px;
+}
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+.user-action-button, .user-profile-button {
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  color: #B0B7C3;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.user-profile-button, .user-profile-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -596,6 +629,18 @@ input[type=search] {
   color: #40C8B7;
   margin: 0px 10px;
 }
+.made {
+  background-color: #55CEBF;
+  color: white;
+}
+.down {
+  background-color: rgba(253, 91, 93, 0.1);
+  color: #FD5B5D;
+}
+.lost {
+  background-color: #FD5B5D;
+  color: #fff;
+}
 .action-buttons{
   display: flex;
   flex-grow: 1;
@@ -706,7 +751,7 @@ input[type=search] {
 }
 
 @media (max-width:1440px) { 
-  .alert-div .trade-style-row, .strategy-type {
+  .style-row, .strategy-type {
     display: none;
   }
 }

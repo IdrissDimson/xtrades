@@ -143,6 +143,7 @@ const company_4 = "Amazon.svg"
 
 let imageSource = "";
 let companySource = "";
+let profitLossColor = ""
 let open = true;
 
 let result = '';
@@ -175,6 +176,19 @@ data.forEach((point) => {
         companySource = company_4;
       }
   }
+  switch (profit_loss[0]){
+    case "Made":
+      profitLossColor = "made";
+      break;
+    case "Down":
+      profitLossColor = "down";
+      break;
+    case "Lost":
+      profitLossColor = "lost";
+      break;
+    default:
+      profitLossColor = "rip";
+  }
   result = `
         <div class="alert-content ${(trade_action === "sold") ? "colors" : ""}" data-popup-trigger="one">
             <div class="alert-div">
@@ -199,7 +213,7 @@ data.forEach((point) => {
     }
             </div>
             </div>
-            <div class="alert-div">
+            <div class="alert-div style-row">
               <div class="trade-style-row">
               <div class="trade-style-detail">${strategy_type[0]}</div>
               ${(strategy_type[1]) ? `<div class="trade-style-detail">${strategy_type[1]}</div>` : ""}
@@ -213,7 +227,7 @@ data.forEach((point) => {
               ${(close !== null ? `<div><span class="closed">${close}</span></div>` : "")}
             </div>
             <div class="alert-div">
-              <div class="gain-loss">${profit_loss[0]} ${profit_loss[1]}</div>
+              <div class="gain-loss ${profitLossColor}">${profit_loss[0]} ${profit_loss[1]}</div>
             </div>
             <div class="alert-div">
               <div class="action-buttons">
